@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Moon</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 
 </head>
 
@@ -19,19 +17,23 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <nav class="menu">
+                <a href="/" class="header__logo">
+                    <img src="img/header-logo.svg" alt="Moon Logo" class="logo__img" width="183" height="48"
+                        loading="lazy">
+                </a>
+                <nav class="header__menu">
                     <ul class="menu__list">
-                        <li class="list__item">
-                            <a href="#" class="menu__link">Home</a>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">Home</a>
                         </li>
-                        <li class="list__item">
-                            <a href="#" class="menu__link">Shop</a>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">Shop</a>
                         </li>
-                        <li class="list__item">
-                            <a href="#" class="menu__link">About</a>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">About</a>
                         </li>
-                        <li class="list__item">
-                            <a href="#" class="menu__link">Contact</a>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,6 +41,20 @@
                     <form action="#">
                         <input type="search" name="search" placeholder="Search item..." class="search-form">
                     </form>
+                </div>
+                <div class="header__actions">
+                    <a href="/" class="actions__link">
+                        <img src="img/heart-icon.svg" alt="Favourites Icon" class="actions__icon" width="24" height="24"
+                            loading="lazy">
+                    </a>
+                    <a href="/" class="actions__link">
+                        <img src="img/shoppingCart-icon.svg" alt="Cart Icon" class="actions__icon" width="24"
+                            height="24" loading="lazy">
+                    </a>
+                    <a href="/" class="actions__link">
+                        <img src="img/user-icon.svg" alt="Profile Icon" class="actions__icon" width="24" height="24"
+                            loading="lazy">
+                    </a>
                 </div>
             </div>
         </div>
@@ -55,14 +71,94 @@
                         <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Product</a></li>
                     </ul>
                 </nav>
+                <section class="product">
+                    <div class="product__photos">
+                        <img src="img/mainPlate.svg" alt="Plate Photo" class="item__img" width="692" height="464"
+                            loading="lazy">
+                        <img src="img/Plate and Food.svg" alt="Plate and Food Photo" class="item__img" width="130"
+                            height="100">
+                        <img src="img/Set of Dishes.svg" alt="Set of Dishes" class="item__img" width="130" height="100">
+                        <img src="img/Set of Folded Dishes.svg" alt="Set of Folded Dishes" class="item__img" width="130"
+                            height="100">
+                        <img src="img/Plate and Flower.svg" alt="Plate and Flower" class="item__img" width="130"
+                            height="100">
+                        <img src="img/Plaes on the Table.svg" alt="Plaes on the Table" class="item__img" width="130"
+                            height="100">
+                    </div>
+                    <div class="product__about">
+                        <h5 class="product__h5">Martin white dinne plate</h5>
+                        <div class="product__reviews">
+                            <img src="img/star1.svg" alt="Rating Star">
+                            <img src="img/star1.svg" alt="Rating Star">
+                            <img src="img/star1.svg" alt="Rating Star">
+                            <img src="img/star1.svg" alt="Rating Star">
+                            <img src="img/star2.svg" alt="Rating Star">
+                            <p class="reviews__counter">(1256 Reviews)</p>
+                            <p class="reviews__stock">Stock:<span class="stock__status">in stock</span></p>
+                        </div>
+                        <div class="product__prices">
+                            <span class="selected-price">$35</span>
+                            <span class="notselected-price">$50</span>
+                        </div>
+                        <div class="product__colors">
+                            <div class="color-example example-white"></div>
+                            <div class="color-example example-brown"></div>
+                            <div class="color-example example-green"></div>
+                            <div class="color-example example-red"></div>
+                            <div class="color-example example-dark"></div>
+                        </div>
+                        <div class="product__actions">
+                            <button type="button" class="toCard__btn">
+                                <span class="toCard__text">Add to cart</span>
+                                <img src="img/shoppingCart-icon.svg" alt="Cart Icon" class="toCard__icon" width="24"
+                                    height="24" loading="lazy">
 
+                            </button>
+                            <button type="button" class="toFavourite__btn">
+                                <img src="img/heart-icon.svg" alt="Favourite Icon" class="toFavourite__icon" width="24"
+                                    height="24" loading="lazy">
+                            </button>
+                        </div>
+                        <div class="product__socials">
+                            <p class="socials__p">Share this:</p>
+                            <a href="/" class="socials__link">
+                                <img src="img/Facebook.svg" alt="Facebook icon" class="sicoals__icon" width="32"
+                                    height="32" loading="lazy">
+                            </a>
+                            <a href="/" class="socials__link">
+                                <img src="img/Twitter.svg" alt="Twitter Icon" class="sicoals__icon" width="32"
+                                    height="32" loading="lazy">
+                            </a>
+                            <a href="/" class="socials__link">
+                                <img src="img/Instagram.svg" alt="Instagramm Icon" class="sicoals__icon" width="32"
+                                    height="32" loading="lazy">
+                            </a>
+                            <a href="/" class="socials__link">
+                                <img src="img/LinkedIn.svg" alt="LinkedIn icon" class="sicoals__icon" width="32"
+                                    height="32" loading="lazy">
+                            </a>
+                            <a href="/" class="socials__link">
+                                <img src="img/YouTube.svg" alt="YouTube Icon" class="sicoals__icon" width="32"
+                                    height="32" loading="lazy">
+                            </a>
 
-
-
-
-
-
-
+                        </div>
+                        <div class="product__details">
+                            <details>
+                                <summary>Details</summary>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, suscipit.</p>
+                            </details>
+                            <details>
+                                <summary>Dimensions</summary>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, suscipit.</p>
+                            </details>
+                            <details>
+                                <summary>Reviews</summary>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, suscipit.</p>
+                            </details>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
